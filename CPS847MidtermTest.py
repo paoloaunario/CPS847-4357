@@ -1,11 +1,11 @@
 import unittest
 from CPS847Midterm import Foo
 
-class TestMethods(unittest.TestCase):
+class TestFooMethods(unittest.TestCase):
 
-    def cps4357(self):
+    def test_cps4357(self):
         foo = Foo()
         self.assertEqual(foo.cps4357(4), 16)
 
-if __name__ == '__main__':
+if __name__ == '__main__':i
     unittest.main()
