@@ -1,24 +1,23 @@
-1. Github Repo name: CPS847-4357 (https://github.com/paoloaunario/CPS847-4357)
+﻿1. Github Repo name: CPS847-4357 (https://github.com/paoloaunario/CPS847-4357)
 
 
 2. AWS Account was not received in time.. please have mercy.
 
-
 3. travis_fold:start:worker_info
 [0K[33;1mWorker information[0m
-hostname: 52a02913-c52c-4978-853a-db15d8b519b8@1.i-0471a0c-production-2-worker-com-ec2.travisci.net
-version: v3.6.0 https://github.com/travis-ci/worker/tree/170b2a0bb43234479fd1911ba9e4dbcc36dadfad
-instance: 1e66502 travisci/ci-garnet:packer-1512502276-986baf0 (via amqp)
-startup: 565.159922ms
+hostname: fb572308-bc7e-4da8-96b3-a07d5b1b652d@1.i-0f02a4e-production-2-worker-com-ec2.travisci.net
+version: v3.5.0 https://github.com/travis-ci/worker/tree/77dbc57c72d00592aeb754773b712da843c7e00d
+instance: c4dd6f1 travisci/ci-garnet:packer-1512502276-986baf0 (via amqp)
+startup: 12.914059274s
 travis_fold:end:worker_info
-[0Kmode of ‘/usr/local/clang-5.0.0/bin’ changed from 0777 (rwxrwxrwx) to 0775 (rwxrwxr-x)
+[0Kmode of â€˜/usr/local/clang-5.0.0/binâ€™ changed from 0777 (rwxrwxrwx) to 0775 (rwxrwxr-x)
 travis_fold:start:system_info
 [0K[33;1mBuild system information[0m
 Build language: python
 Build group: stable
 Build dist: trusty
-Build id: 67548376
-Job id: 113425744
+Build id: 67552489
+Job id: 113433299
 Runtime kernel version: 4.14.12-041412-generic
 travis-build version: 6bc9a3ab4
 [34m[1mBuild image provisioning date and time[0m
@@ -412,7 +411,7 @@ ruby-2.3.4
 ruby-2.4.1
 travis_fold:end:system_info
 [0K
-removed ‘/etc/apt/sources.list.d/basho_riak.list’
+removed â€˜/etc/apt/sources.list.d/basho_riak.listâ€™
 [32;1mNetwork availability confirmed.[0m
 127.0.0.1	localhost
 ::1	 ip6-localhost ip6-loopback
@@ -420,88 +419,119 @@ fe00::0	ip6-localnet
 ff00::0	ip6-mcastprefix
 ff02::1	ip6-allnodes
 ff02::2	ip6-allrouters
-172.17.0.10	travis-job-paoloaunario-cps847-4357-113425744.travisci.net travis-job-paoloaunario-cps847-4357-113425744
+172.17.0.8	travis-job-paoloaunario-cps847-4357-113433299.travisci.net travis-job-paoloaunario-cps847-4357-113433299
 W: http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg: Signature by key 15866BAFD9BCC4F3C1E0DFC7D69548E1C17EAB57 uses weak digest algorithm (SHA1)
 
 Installing an SSH key from: default repository key
 Key fingerprint: 1c:84:a9:36:0e:b2:d9:a3:69:0c:24:c4:86:a4:10:39
 
 travis_fold:start:git.checkout
-[0Ktravis_time:start:2494f4b8
+[0Ktravis_time:start:037fdaf4
 [0K$ git clone --depth=50 --branch=master git@github.com:paoloaunario/CPS847-4357.git paoloaunario/CPS847-4357
 Cloning into 'paoloaunario/CPS847-4357'...
-Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
 
-remote: Counting objects: 29, done.[K
-remote: Compressing objects:   5% (1/18)   [K
-remote: Compressing objects:  11% (2/18)   [K
-remote: Compressing objects:  16% (3/18)   [K
-remote: Compressing objects:  22% (4/18)   [K
-remote: Compressing objects:  27% (5/18)   [K
-remote: Compressing objects:  33% (6/18)   [K
-remote: Compressing objects:  38% (7/18)   [K
-remote: Compressing objects:  44% (8/18)   [K
-remote: Compressing objects:  50% (9/18)   [K
-remote: Compressing objects:  55% (10/18)   [K
-remote: Compressing objects:  61% (11/18)   [K
-remote: Compressing objects:  66% (12/18)   [K
-remote: Compressing objects:  72% (13/18)   [K
-remote: Compressing objects:  77% (14/18)   [K
-remote: Compressing objects:  83% (15/18)   [K
-remote: Compressing objects:  88% (16/18)   [K
-remote: Compressing objects:  94% (17/18)   [K
-remote: Compressing objects: 100% (18/18)   [K
-remote: Compressing objects: 100% (18/18), done.[K
-remote: Total 29 (delta 8), reused 26 (delta 5), pack-reused 0[K
-Receiving objects:   3% (1/29)   
-Receiving objects:   6% (2/29)   
-Receiving objects:  10% (3/29)   
-Receiving objects:  13% (4/29)   
-Receiving objects:  17% (5/29)   
-Receiving objects:  20% (6/29)   
-Receiving objects:  24% (7/29)   
-Receiving objects:  27% (8/29)   
-Receiving objects:  31% (9/29)   
-Receiving objects:  34% (10/29)   
-Receiving objects:  37% (11/29)   
-Receiving objects:  41% (12/29)   
-Receiving objects:  44% (13/29)   
-Receiving objects:  48% (14/29)   
-Receiving objects:  51% (15/29)   
-Receiving objects:  55% (16/29)   
-Receiving objects:  58% (17/29)   
-Receiving objects:  62% (18/29)   
-Receiving objects:  65% (19/29)   
-Receiving objects:  68% (20/29)   
-Receiving objects:  72% (21/29)   
-Receiving objects:  75% (22/29)   
-Receiving objects:  79% (23/29)   
-Receiving objects:  82% (24/29)   
-Receiving objects:  86% (25/29)   
-Receiving objects:  89% (26/29)   
-Receiving objects:  93% (27/29)   
-Receiving objects:  96% (28/29)   
-Receiving objects: 100% (29/29)   
-Receiving objects: 100% (29/29), done.
-Resolving deltas:   0% (0/8)   
-Resolving deltas:  50% (4/8)   
-Resolving deltas: 100% (8/8)   
-Resolving deltas: 100% (8/8), done.
+remote: Counting objects: 45, done.[K
+remote: Compressing objects:   3% (1/30)   [K
+remote: Compressing objects:   6% (2/30)   [K
+remote: Compressing objects:  10% (3/30)   [K
+remote: Compressing objects:  13% (4/30)   [K
+remote: Compressing objects:  16% (5/30)   [K
+remote: Compressing objects:  20% (6/30)   [K
+remote: Compressing objects:  23% (7/30)   [K
+remote: Compressing objects:  26% (8/30)   [K
+remote: Compressing objects:  30% (9/30)   [K
+remote: Compressing objects:  33% (10/30)   [K
+remote: Compressing objects:  36% (11/30)   [K
+remote: Compressing objects:  40% (12/30)   [K
+remote: Compressing objects:  43% (13/30)   [K
+remote: Compressing objects:  46% (14/30)   [K
+remote: Compressing objects:  50% (15/30)   [K
+remote: Compressing objects:  53% (16/30)   [K
+remote: Compressing objects:  56% (17/30)   [K
+remote: Compressing objects:  60% (18/30)   [K
+remote: Compressing objects:  63% (19/30)   [K
+remote: Compressing objects:  66% (20/30)   [K
+remote: Compressing objects:  70% (21/30)   [K
+remote: Compressing objects:  73% (22/30)   [K
+remote: Compressing objects:  76% (23/30)   [K
+remote: Compressing objects:  80% (24/30)   [K
+remote: Compressing objects:  83% (25/30)   [K
+remote: Compressing objects:  86% (26/30)   [K
+remote: Compressing objects:  90% (27/30)   [K
+remote: Compressing objects:  93% (28/30)   [K
+remote: Compressing objects:  96% (29/30)   [K
+remote: Compressing objects: 100% (30/30)   [K
+remote: Compressing objects: 100% (30/30), done.[K
+Receiving objects:   2% (1/45)   
+Receiving objects:   4% (2/45)   
+Receiving objects:   6% (3/45)   
+Receiving objects:   8% (4/45)   
+Receiving objects:  11% (5/45)   
+Receiving objects:  13% (6/45)   
+Receiving objects:  15% (7/45)   
+Receiving objects:  17% (8/45)   
+Receiving objects:  20% (9/45)   
+Receiving objects:  22% (10/45)   
+Receiving objects:  24% (11/45)   
+Receiving objects:  26% (12/45)   
+Receiving objects:  28% (13/45)   
+Receiving objects:  31% (14/45)   
+Receiving objects:  33% (15/45)   
+Receiving objects:  35% (16/45)   
+Receiving objects:  37% (17/45)   
+Receiving objects:  40% (18/45)   
+Receiving objects:  42% (19/45)   
+Receiving objects:  44% (20/45)   
+Receiving objects:  46% (21/45)   
+Receiving objects:  48% (22/45)   
+Receiving objects:  51% (23/45)   
+remote: Total 45 (delta 14), reused 40 (delta 9), pack-reused 0[K
+Receiving objects:  53% (24/45)   
+Receiving objects:  55% (25/45)   
+Receiving objects:  57% (26/45)   
+Receiving objects:  60% (27/45)   
+Receiving objects:  62% (28/45)   
+Receiving objects:  64% (29/45)   
+Receiving objects:  66% (30/45)   
+Receiving objects:  68% (31/45)   
+Receiving objects:  71% (32/45)   
+Receiving objects:  73% (33/45)   
+Receiving objects:  75% (34/45)   
+Receiving objects:  77% (35/45)   
+Receiving objects:  80% (36/45)   
+Receiving objects:  82% (37/45)   
+Receiving objects:  84% (38/45)   
+Receiving objects:  86% (39/45)   
+Receiving objects:  88% (40/45)   
+Receiving objects:  91% (41/45)   
+Receiving objects:  93% (42/45)   
+Receiving objects:  95% (43/45)   
+Receiving objects:  97% (44/45)   
+Receiving objects: 100% (45/45)   
+Receiving objects: 100% (45/45), 17.54 KiB | 460.00 KiB/s, done.
+Resolving deltas:   0% (0/14)   
+Resolving deltas:  21% (3/14)   
+Resolving deltas:  28% (4/14)   
+Resolving deltas:  35% (5/14)   
+Resolving deltas:  64% (9/14)   
+Resolving deltas: 100% (14/14)   
+Resolving deltas: 100% (14/14), done.
 
-travis_time:end:2494f4b8:start=1520363926284036985,finish=1520363926585082420,duration=301045435
+travis_time:end:037fdaf4:start=1520366196644175869,finish=1520366196958400217,duration=314224348
 [0K$ cd paoloaunario/CPS847-4357
-$ git checkout -qf 6002c66e79445d638bdc81f853023a9c2ea10036
+$ git checkout -qf c381745f6c41791390c093c99eb6a68b04c7487f
 travis_fold:end:git.checkout
-[0Ktravis_time:start:05b8f5d6
+[0Ktravis_time:start:297b9102
 [0K$ source ~/virtualenv/python2.7/bin/activate
 
-travis_time:end:05b8f5d6:start=1520363930622219476,finish=1520363930629012121,duration=6792645
+travis_time:end:297b9102:start=1520366200953947211,finish=1520366200961072522,duration=7125311
 [0K$ python --version
 Python 2.7.14
 $ pip --version
 pip 9.0.1 from /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages (python 2.7)
 travis_fold:start:install
-[0Ktravis_time:start:0146a831
+[0Ktravis_time:start:2b394598
 [0K$ pip install -r requirements.txt
 Collecting coveralls (from -r requirements.txt (line 1))
   Downloading coveralls-1.3.0-py2.py3-none-any.whl
@@ -510,412 +540,412 @@ Collecting docopt>=0.6.1 (from coveralls->-r requirements.txt (line 1))
 Collecting requests>=1.0.0 (from coveralls->-r requirements.txt (line 1))
   Downloading requests-2.18.4-py2.py3-none-any.whl (88kB)
 [?25l
-[K    11% |███▊                            | 10kB 54.2MB/s eta 0:00:01
-[K    23% |███████▍                        | 20kB 23.6MB/s eta 0:00:01
-[K    34% |███████████                     | 30kB 29.7MB/s eta 0:00:01
-[K    46% |██████████████▊                 | 40kB 25.3MB/s eta 0:00:01
-[K    57% |██████████████████▌             | 51kB 18.3MB/s eta 0:00:01
-[K    69% |██████████████████████▏         | 61kB 20.7MB/s eta 0:00:01
-[K    80% |█████████████████████████▉      | 71kB 17.3MB/s eta 0:00:01
-[K    92% |█████████████████████████████▌  | 81kB 18.8MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 92kB 8.0MB/s 
+[K    11% |â–ˆâ–ˆâ–ˆâ–Š                            | 10kB 53.6MB/s eta 0:00:01
+[K    23% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                        | 20kB 43.0MB/s eta 0:00:01
+[K    34% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                     | 30kB 44.6MB/s eta 0:00:01
+[K    46% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                 | 40kB 17.6MB/s eta 0:00:01
+[K    57% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ             | 51kB 12.2MB/s eta 0:00:01
+[K    69% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–         | 61kB 13.9MB/s eta 0:00:01
+[K    80% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰      | 71kB 13.1MB/s eta 0:00:01
+[K    92% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ  | 81kB 14.5MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 92kB 7.2MB/s 
 [?25hCollecting urllib3[secure]; python_version < "3" (from coveralls->-r requirements.txt (line 1))
   Downloading urllib3-1.22-py2.py3-none-any.whl (132kB)
 [?25l
-[K    7% |██▌                             | 10kB 57.9MB/s eta 0:00:01
-[K    15% |█████                           | 20kB 48.1MB/s eta 0:00:01
-[K    23% |███████▍                        | 30kB 51.9MB/s eta 0:00:01
-[K    30% |██████████                      | 40kB 34.8MB/s eta 0:00:01
-[K    38% |██████���█████▍                   | 51kB 34.4MB/s eta 0:00:01
-[K    46% |██████████████▉                 | 61kB 37.0MB/s eta 0:00:01
-[K    54% |█████████████████▍              | 71kB 30.0MB/s eta 0:00:01
-[K    61% |███████████████████▉            | 81kB 28.8MB/s eta 0:00:01
-[K    69% |██████████████████████▎         | 92kB 30.7MB/s eta 0:00:01
-[K    77% |████████████████████████▊       | 102kB 30.9MB/s eta 0:00:01
-[K    85% |███████████████████████████▎    | 112kB 31.0MB/s eta 0:00:01
-[K    92% |█████████████████████████████▊  | 122kB 29.2MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 133kB 7.6MB/s 
+[K    7% |â–ˆâ–ˆâ–Œ                             | 10kB 49.7MB/s eta 0:00:01
+[K    15% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                           | 20kB 41.5MB/s eta 0:00:01
+[K    23% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                        | 30kB 42.5MB/s eta 0:00:01
+[K    30% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                      | 40kB 28.3MB/s eta 0:00:01
+[K    38% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                   | 51kB 18.8MB/s eta 0:00:01
+[K    46% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                 | 61kB 20.9MB/s eta 0:00:01
+[K    54% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–              | 71kB 20.1MB/s eta 0:00:01
+[K    61% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰            | 81kB 18.7MB/s eta 0:00:01
+[K    69% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž         | 92kB 20.1MB/s eta 0:00:01
+[K    77% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š       | 102kB 20.3MB/s eta 0:00:01
+[K    85% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž    | 112kB 20.4MB/s eta 0:00:01
+[K    92% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š  | 122kB 19.0MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 133kB 6.9MB/s 
 [?25hCollecting coverage>=3.6 (from coveralls->-r requirements.txt (line 1))
   Downloading coverage-4.5.1-cp27-cp27mu-manylinux1_x86_64.whl (199kB)
 [?25l
-[K    5% |█▋                              | 10kB 59.6MB/s eta 0:00:01
-[K    10% |███▎                            | 20kB 42.0MB/s eta 0:00:01
-[K    15% |█████                           | 30kB 43.3MB/s eta 0:00:01
-[K    20% |██████▋                         | 40kB 39.8MB/s eta 0:00:01
-[K    25% |████████▏                       | 51kB 40.4MB/s eta 0:00:01
-[K    30% |█████████▉                      | 61kB 40.3MB/s eta 0:00:01
-[K    35% |███████████▌                    | 71kB 40.7MB/s eta 0:00:01
-[K    41% |█████████████▏                  | 81kB 41.5MB/s eta 0:00:01
-[K    46% |██████████████▊                 | 92kB 43.1MB/s eta 0:00:01
-[K    51% |████████████████▍               | 102kB 43.0MB/s eta 0:00:01
-[K    56% |██████████████████              | 112kB 43.2MB/s eta 0:00:01
-[K    61% |███████████████████▊            | 122kB 45.2MB/s eta 0:00:01
-[K    66% |█████████████████████▍          | 133kB 45.8MB/s eta 0:00:01
-[K    71% |███████████████████████         | 143kB 49.5MB/s eta 0:00:01
-[K    76% |████████████████████████▋       | 153kB 45.1MB/s eta 0:00:01
-[K    82% |███████████████████████���██▎     | 163kB 46.0MB/s eta 0:00:01
-[K    87% |████████████████████████████    | 174kB 47.8MB/s eta 0:00:01
-[K    92% |█████████████████████████████▌  | 184kB 47.9MB/s eta 0:00:01
-[K    97% |███████████████████████████████▏| 194kB 48.1MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 204kB 6.0MB/s 
+[K    5% |â–ˆâ–‹                              | 10kB 60.9MB/s eta 0:00:01
+[K    10% |â–ˆâ–ˆâ–ˆâ–Ž                            | 20kB 46.1MB/s eta 0:00:01
+[K    15% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                           | 30kB 49.9MB/s eta 0:00:01
+[K    20% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                         | 40kB 50.1MB/s eta 0:00:01
+[K    25% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                       | 51kB 36.5MB/s eta 0:00:01
+[K    30% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                      | 61kB 38.5MB/s eta 0:00:01
+[K    35% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                    | 71kB 38.9MB/s eta 0:00:01
+[K    41% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                  | 81kB 33.1MB/s eta 0:00:01
+[K    46% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                 | 92kB 34.6MB/s eta 0:00:01
+[K    51% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–               | 102kB 33.4MB/s eta 0:00:01
+[K    56% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ              | 112kB 33.3MB/s eta 0:00:01
+[K    61% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š            | 122kB 28.2MB/s eta 0:00:01
+[K    66% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–          | 133kB 26.5MB/s eta 0:00:01
+[K    71% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ         | 143kB 26.7MB/s eta 0:00:01
+[K    76% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹       | 153kB 29.4MB/s eta 0:00:01
+[K    82% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆï¿½ï¿½ï¿½â–ˆâ–ˆâ–Ž     | 163kB 28.3MB/s eta 0:00:01
+[K    87% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ    | 174kB 28.7MB/s eta 0:00:01
+[K    92% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ  | 184kB 30.9MB/s eta 0:00:01
+[K    97% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–| 194kB 31.0MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 204kB 4.7MB/s 
 [?25hCollecting certifi>=2017.4.17 (from requests>=1.0.0->coveralls->-r requirements.txt (line 1))
   Downloading certifi-2018.1.18-py2.py3-none-any.whl (151kB)
 [?25l
-[K    6% |██▏                             | 10kB 64.4MB/s eta 0:00:01
-[K    13% |████▎                           | 20kB 50.3MB/s eta 0:00:01
-[K    20% |██████▌                         | 30kB 51.4MB/s eta 0:00:01
-[K    27% |████████▋                       | 40kB 51.5MB/s eta 0:00:01
-[K    33% |██████████▉                     | 51kB 49.3MB/s eta 0:00:01
-[K    40% |█████████████                   | 61kB 51.3MB/s eta 0:00:01
-[K    47% |███████████████▏                | 71kB 50.8MB/s eta 0:00:01
-[K    54% |█████████████████▎              | 81kB 50.3MB/s eta 0:00:01
-[K    60% |███████████████████▌            | 92kB 51.8MB/s eta 0:00:01
-[K    67% |████████████████���████▋          | 102kB 52.1MB/s eta 0:00:01
-[K    74% |███████████████████████▊        | 112kB 52.3MB/s eta 0:00:01
-[K    81% |██████████████████████████      | 122kB 53.5MB/s eta 0:00:01
-[K    87% |████████████████████████████    | 133kB 53.6MB/s eta 0:00:01
-[K    94% |██████████████████████████████▎ | 143kB 54.9MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 153kB 8.0MB/s 
+[K    6% |â–ˆâ–ˆâ–                             | 10kB 66.9MB/s eta 0:00:01
+[K    13% |â–ˆâ–ˆâ–ˆâ–ˆâ–Ž                           | 20kB 53.9MB/s eta 0:00:01
+[K    20% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                         | 30kB 56.8MB/s eta 0:00:01
+[K    27% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                       | 40kB 55.5MB/s eta 0:00:01
+[K    33% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                     | 51kB 54.9MB/s eta 0:00:01
+[K    40% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                   | 61kB 56.4MB/s eta 0:00:01
+[K    47% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                | 71kB 56.0MB/s eta 0:00:01
+[K    54% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž              | 81kB 55.5MB/s eta 0:00:01
+[K    60% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ            | 92kB 56.6MB/s eta 0:00:01
+[K    67% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆï¿½ï¿½ï¿½â–ˆâ–ˆâ–ˆâ–ˆâ–‹          | 102kB 55.5MB/s eta 0:00:01
+[K    74% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š        | 112kB 55.5MB/s eta 0:00:01
+[K    81% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ      | 122kB 56.8MB/s eta 0:00:01
+[K    87% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ    | 133kB 55.9MB/s eta 0:00:01
+[K    94% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž | 143kB 57.4MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 153kB 8.2MB/s 
 [?25hCollecting chardet<3.1.0,>=3.0.2 (from requests>=1.0.0->coveralls->-r requirements.txt (line 1))
   Downloading chardet-3.0.4-py2.py3-none-any.whl (133kB)
 [?25l
-[K    7% |██▌                             | 10kB 51.4MB/s eta 0:00:01
-[K    15% |█████                           | 20kB 45.0MB/s eta 0:00:01
-[K    23% |███████▍                        | 30kB 49.7MB/s eta 0:00:01
-[K    30% |█████████▉                      | 40kB 29.0MB/s eta 0:00:01
-[K    38% |████████████▎                   | 51kB 24.2MB/s eta 0:00:01
-[K    46% |██████████████▊                 | 61kB 26.9MB/s eta 0:00:01
-[K    53% |█████████████████▏              | 71kB 26.2MB/s eta 0:00:01
-[K    61% |███████████████████▋            | 81kB 22.7MB/s eta 0:00:01
-[K    69% |██████████████████████▏         | 92kB 24.5MB/s eta 0:00:01
-[K    76% |████████████████████████▋       | 102kB 22.9MB/s eta 0:00:01
-[K    84% |███████████████████████████     | 112kB 23.2MB/s eta 0:00:01
-[K    92% |█████████████████████████████▌  | 122kB 22.3MB/s eta 0:00:01
-[K    99% |████████████████████████████████| 133kB 20.2MB/s eta 0:00:01
-[K    100% |████████████████████████���███████| 143kB 7.2MB/s 
+[K    7% |â–ˆâ–ˆâ–Œ                             | 10kB 68.3MB/s eta 0:00:01
+[K    15% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                           | 20kB 51.6MB/s eta 0:00:01
+[K    23% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                        | 30kB 54.8MB/s eta 0:00:01
+[K    30% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                      | 40kB 54.0MB/s eta 0:00:01
+[K    38% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                   | 51kB 53.9MB/s eta 0:00:01
+[K    46% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                 | 61kB 55.6MB/s eta 0:00:01
+[K    53% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–              | 71kB 50.3MB/s eta 0:00:01
+[K    61% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹            | 81kB 49.9MB/s eta 0:00:01
+[K    69% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–         | 92kB 51.4MB/s eta 0:00:01
+[K    76% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹       | 102kB 51.6MB/s eta 0:00:01
+[K    84% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ     | 112kB 51.6MB/s eta 0:00:01
+[K    92% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ  | 122kB 49.2MB/s eta 0:00:01
+[K    99% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 133kB 49.0MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 143kB 8.8MB/s 
 [?25hCollecting idna<2.7,>=2.5 (from requests>=1.0.0->coveralls->-r requirements.txt (line 1))
   Downloading idna-2.6-py2.py3-none-any.whl (56kB)
 [?25l
-[K    18% |█████▉                          | 10kB 45.9MB/s eta 0:00:01
-[K    36% |███████████▋                    | 20kB 42.1MB/s eta 0:00:01
-[K    54% |█████████████████▍              | 30kB 43.9MB/s eta 0:00:01
-[K    72% |███████████████████████▏        | 40kB 45.5MB/s eta 0:00:01
-[K    90% |█████████████████████████████   | 51kB 47.3MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 61kB 10.2MB/s 
+[K    18% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                          | 10kB 67.7MB/s eta 0:00:01
+[K    36% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                    | 20kB 51.4MB/s eta 0:00:01
+[K    54% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–              | 30kB 54.6MB/s eta 0:00:01
+[K    72% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–        | 40kB 52.2MB/s eta 0:00:01
+[K    90% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   | 51kB 52.9MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 61kB 5.0MB/s 
 [?25hCollecting pyOpenSSL>=0.14; python_version <= "2.7" and extra == "secure" (from urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
   Downloading pyOpenSSL-17.5.0-py2.py3-none-any.whl (53kB)
 [?25l
-[K    19% |██████▏                         | 10kB 57.6MB/s eta 0:00:01
-[K    38% |████████████▎                   | 20kB 47.9MB/s eta 0:00:01
-[K    57% |██████████████████▍             | 30kB 51.9MB/s eta 0:00:01
-[K    76% |████████████████████████▌       | 40kB 52.1MB/s eta 0:00:01
-[K    95% |██████████████████████████████▋ | 51kB 52.6MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 61kB 12.1MB/s 
+[K    19% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                         | 10kB 59.9MB/s eta 0:00:01
+[K    38% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                   | 20kB 44.9MB/s eta 0:00:01
+[K    57% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–             | 30kB 46.4MB/s eta 0:00:01
+[K    76% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ       | 40kB 46.1MB/s eta 0:00:01
+[K    95% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹ | 51kB 46.9MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 61kB 10.8MB/s 
 [?25hCollecting cryptography>=1.3.4; python_version <= "2.7" and extra == "secure" (from urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
   Downloading cryptography-2.1.4-cp27-cp27mu-manylinux1_x86_64.whl (2.2MB)
 [?25l
-[K    0% |▏                               | 10kB 54.4MB/s eta 0:00:01
-[K    0% |▎                               | 20kB 44.9MB/s eta 0:00:01
-[K    1% |▌                               | 30kB 46.7MB/s eta 0:00:01
-[K    1% |▋                               | 40kB 47.3MB/s eta 0:00:01
-[K    2% |▊                               | 51kB 48.2MB/s eta 0:00:01
-[K    2% |█                               | 61kB 50.2MB/s eta 0:00:01
-[K    3% |█                               | 71kB 49.7MB/s eta 0:00:01
-[K    3% |█▏                              | 81kB 48.8MB/s eta 0:00:01
-[K    4% |█▍                              | 92kB 50.1MB/s eta 0:00:01
-[K    4% |█▌                              | 102kB 50.5MB/s eta 0:00:01
-[K    5% |█▋                              | 112kB 51.5MB/s eta 0:00:01
-[K    5% |█▉                              | 122kB 52.8MB/s eta 0:00:01
-[K    6% |██                              | 133kB 52.9MB/s eta 0:00:01
-[K    6% |██                              | 143kB 54.4MB/s eta 0:00:01
-[K    7% |██▎                             | 153kB 54.1MB/s eta 0:00:01
-[K    7% |██▍                             | 163kB 53.2MB/s eta 0:00:01
-[K    7% |██▌                             | 174kB 55.1MB/s eta 0:00:01
-[K    8% |██▊                             | 184kB 55.7MB/s eta 0:00:01
-[K    8% |██▉                             | 194kB 55.8MB/s eta 0:00:01
-[K    9% |███                             | 204kB 55.8MB/s eta 0:00:01
-[K    9% |███▏                            | 215kB 54.2MB/s eta 0:00:01
-[K    10% |███▎                            | 225kB 56.0MB/s eta 0:00:01
-[K    10% |███▌                            | 235kB 55.7MB/s eta 0:00:01
-[K    11% |███▋                            | 245kB 54.7MB/s eta 0:00:01
-[K    11% |███▊                            | 256kB 56.4MB/s eta 0:00:01
-[K    12% |████                            | 266kB 55.9MB/s eta 0:00:01
-[K    12% |████                            | 276kB 56.0MB/s eta 0:00:01
-[K    13% |████▏                           | 286kB 56.0MB/s eta 0:00:01
-[K    13% |████▍                           | 296kB 53.8MB/s eta 0:00:01
-[K    14% |████▌                           | 307kB 54.7MB/s eta 0:00:01
-[K    14% |████▋                           | 317kB 54.7MB/s eta 0:00:01
-[K    15% |████▉                           | 327kB 53.6MB/s eta 0:00:01
-[K    15% |█████                           | 337kB 55.3MB/s eta 0:00:01
-[K    15% |█████                           | 348kB 54.6MB/s eta 0:00:01
-[K    16% |█████▎                          | 358kB 54.6MB/s eta 0:00:01
-[K    16% |█████▍                          | 368kB 54.6MB/s eta 0:00:01
-[K    17% |█████▋                          | 378kB 53.5MB/s eta 0:00:01
-[K    17% |█████▊                          | 389kB 55.4MB/s eta 0:00:01
-[K    18% |█████▉                          | 399kB 56.0MB/s eta 0:00:01
-[K    18% |██████                          | 409kB 54.4MB/s eta 0:00:01
-[K    19% |██████▏                         | 419kB 56.1MB/s eta 0:00:01
-[K    19% |██████▎                         | 430kB 55.5MB/s eta 0:00:01
-[K    20% |██████▌                         | 440kB 55.5MB/s eta 0:00:01
-[K    20% |██████▋                         | 450kB 55.7MB/s eta 0:00:01
-[K    21% |██████▊                         | 460kB 54.6MB/s eta 0:00:01
-[K    21% |███████                         | 471kB 56.1MB/s eta 0:00:01
-[K    22% |███████                         | 481kB 55.6MB/s eta 0:00:01
-[K    22% |███████▏                        | 491kB 53.9MB/s eta 0:00:01
-[K    23% |███████▍                        | 501kB 55.6MB/s eta 0:00:01
-[K    23% |███████▌                        | 512kB 56.2MB/s eta 0:00:01
-[K    23% |███████▋                        | 522kB 55.4MB/s eta 0:00:01
-[K    24% |███████▉                        | 532kB 56.0MB/s eta 0:00:01
-[K    24% |████████                        | 542kB 54.9MB/s eta 0:00:01
-[K    25% |████████▏                       | 552kB 56.7MB/s eta 0:00:01
-[K    25% |████████▎                       | 563kB 56.7MB/s eta 0:00:01
-[K    26% |████████▍                       | 573kB 53.7MB/s eta 0:00:01
-[K    26% |████████▋                       | 583kB 54.9MB/s eta 0:00:01
-[K    27% |████████▊                       | 593kB 54.8MB/s eta 0:00:01
-[K    27% |████████▉                       | 604kB 54.3MB/s eta 0:00:01
-[K    28% |█████████                       | 614kB 53.8MB/s eta 0:00:01
-[K    28% |█████████▏                      | 624kB 52.9MB/s eta 0:00:01
-[K    29% |█████████▎                      | 634kB 53.9MB/s eta 0:00:01
-[K    29% |█████████▌                      | 645kB 53.3MB/s eta 0:00:01
-[K    30% |█████████▋                      | 655kB 52.4MB/s eta 0:00:01
-[K    30% |█████████▊                      | 665kB 53.3MB/s eta 0:00:01
-[K    31% |██████████                      | 675kB 54.6MB/s eta 0:00:01
-[K    31% |██████████                      | 686kB 54.9MB/s eta 0:00:01
-[K    31% |██████████▏                     | 696kB 55.1MB/s eta 0:00:01
-[K    32% |██████████▍                     | 706kB 54.0MB/s eta 0:00:01
-[K    32% |██████████▌                     | 716kB 55.6MB/s eta 0:00:01
-[K    33% |██████████▊                     | 727kB 55.7MB/s eta 0:00:01
-[K    33% |██████████▉                     | 737kB 53.4MB/s eta 0:00:01
-[K    34% |███████████                     | 747kB 54.9MB/s eta 0:00:01
-[K    34% |███████████▏                    | 757kB 54.3MB/s eta 0:00:01
-[K    35% |███████████▎                    | 768kB 54.4MB/s eta 0:00:01
-[K    35% |███████████▍                    | 778kB 54.5MB/s eta 0:00:01
-[K    36% |███████████▋                    | 788kB 53.5MB/s eta 0:00:01
-[K    36% |███████████▊                    | 798kB 55.2MB/s eta 0:00:01
-[K    37% |███████████▉                    | 808kB 55.3MB/s eta 0:00:01
-[K    37% |████████████                    | 819kB 51.1MB/s eta 0:00:01
-[K    38% |████████████▏                   | 829kB 50.8MB/s eta 0:00:01
-[K    38% |████████████▎                   | 839kB 49.2MB/s eta 0:00:01
-[K    38% |████████████▌                   | 849kB 48.1MB/s eta 0:00:01
-[K    39% |████████████▋                   | 860kB 47.2MB/s eta 0:00:01
-[K    39% |████████████▊                   | 870kB 46.2MB/s eta 0:00:01
-[K    40% |█████████████                   | 880kB 47.3MB/s eta 0:00:01
-[K    40% |█████████████                   | 890kB 46.8MB/s eta 0:00:01
-[K    41% |█████████████▎                  | 901kB 45.8MB/s eta 0:00:01
-[K    41% |█████████████▍                  | 911kB 46.9MB/s eta 0:00:01
-[K    42% |█████████████▌                  | 921kB 49.5MB/s eta 0:00:01
-[K    42% |█████████████▊                  | 931kB 51.2MB/s eta 0:00:01
-[K    43% |█████████████▉                  | 942kB 53.1MB/s eta 0:00:01
-[K    43% |██████████████                  | 952kB 52.7MB/s eta 0:00:01
-[K    44% |████████���█████▏                 | 962kB 55.4MB/s eta 0:00:01
-[K    44% |██████████████▎                 | 972kB 42.5MB/s eta 0:00:01
-[K    45% |██████████████▍                 | 983kB 41.5MB/s eta 0:00:01
-[K    45% |██████████████▋                 | 993kB 42.5MB/s eta 0:00:01
-[K    46% |██████████████▊                 | 1.0MB 42.3MB/s eta 0:00:01
-[K    46% |██████████████▉                 | 1.0MB 42.3MB/s eta 0:00:01
-[K    46% |███████████████                 | 1.0MB 42.0MB/s eta 0:00:01
-[K    47% |███████████████▏                | 1.0MB 41.0MB/s eta 0:00:01
-[K    47% |███████████████▎                | 1.0MB 42.2MB/s eta 0:00:01
-[K    48% |███████████████▌                | 1.1MB 42.4MB/s eta 0:00:01
-[K    48% |███████████████▋                | 1.1MB 41.4MB/s eta 0:00:01
-[K    49% |███████████████▉                | 1.1MB 54.9MB/s eta 0:00:01
-[K    49% |████████████████                | 1.1MB 54.9MB/s eta 0:00:01
-[K    50% |████████████████                | 1.1MB 54.0MB/s eta 0:00:01
-[K    50% |████████████████▎               | 1.1MB 54.4MB/s eta 0:00:01
-[K    51% |████████████████▍               | 1.1MB 53.4MB/s eta 0:00:01
-[K    51% |██���█████████████▌               | 1.1MB 54.0MB/s eta 0:00:01
-[K    52% |████████████████▊               | 1.1MB 54.0MB/s eta 0:00:01
-[K    52% |████████████████▉               | 1.1MB 53.0MB/s eta 0:00:01
-[K    53% |█████████████████               | 1.2MB 54.6MB/s eta 0:00:01
-[K    53% |█████████████████▏              | 1.2MB 55.2MB/s eta 0:00:01
-[K    54% |█████████████████▎              | 1.2MB 55.2MB/s eta 0:00:01
-[K    54% |█████████████████▍              | 1.2MB 55.4MB/s eta 0:00:01
-[K    54% |█████████████████▋              | 1.2MB 54.7MB/s eta 0:00:01
-[K    55% |█████████████████▊              | 1.2MB 55.9MB/s eta 0:00:01
-[K    55% |█████████████████▉              | 1.2MB 55.4MB/s eta 0:00:01
-[K    56% |██████████████████              | 1.2MB 54.6MB/s eta 0:00:01
-[K    56% |██████████████████▏             | 1.2MB 56.1MB/s eta 0:00:01
-[K    57% |██████████████████▍             | 1.2MB 55.4MB/s eta 0:00:01
-[K    57% |██████████████████▌             | 1.3MB 55.4MB/s eta 0:00:01
-[K    58% |██████████████████▋             | 1.3MB 55.4MB/s eta 0:00:01
-[K    58% |████████���█████████▉             | 1.3MB 54.4MB/s eta 0:00:01
-[K    59% |███████████████████             | 1.3MB 56.1MB/s eta 0:00:01
-[K    59% |███████████████████             | 1.3MB 56.1MB/s eta 0:00:01
-[K    60% |███████████████████▎            | 1.3MB 54.5MB/s eta 0:00:01
-[K    60% |███████████████████▍            | 1.3MB 56.0MB/s eta 0:00:01
-[K    61% |███████████████████▌            | 1.3MB 56.7MB/s eta 0:00:01
-[K    61% |███████████████████▊            | 1.3MB 56.9MB/s eta 0:00:01
-[K    62% |███████████████████▉            | 1.4MB 57.1MB/s eta 0:00:01
-[K    62% |████████████████████            | 1.4MB 55.3MB/s eta 0:00:01
-[K    62% |████████████████████▏           | 1.4MB 56.3MB/s eta 0:00:01
-[K    63% |████████████████████▎           | 1.4MB 55.9MB/s eta 0:00:01
-[K    63% |████████████████████▍           | 1.4MB 54.6MB/s eta 0:00:01
-[K    64% |████████████████████▋           | 1.4MB 56.2MB/s eta 0:00:01
-[K    64% |████████████████████▊           | 1.4MB 56.3MB/s eta 0:00:01
-[K    65% |█████████████████████           | 1.4MB 56.3MB/s eta 0:00:01
-[K    65% |█████████████████████           | 1.4MB 56.2MB/s eta 0:00:01
-[K    66% |█████████████████████▏          | 1.4MB 54.6MB/s eta 0:00:01
-[K    66% |█████████████████████▍          | 1.5MB 56.3MB/s eta 0:00:01
-[K    67% |█████████████████████▌          | 1.5MB 56.5MB/s eta 0:00:01
-[K    67% |█████████████████████▋          | 1.5MB 55.4MB/s eta 0:00:01
-[K    68% |█████████████████████▉          | 1.5MB 56.9MB/s eta 0:00:01
-[K    68% |██████████████████████          | 1.5MB 56.4MB/s eta 0:00:01
-[K    69% |██████████████████████          | 1.5MB 56.5MB/s eta 0:00:01
-[K    69% |██████████████████████▎         | 1.5MB 57.1MB/s eta 0:00:01
-[K    69% |██████████████████████▍         | 1.5MB 55.3MB/s eta 0:00:01
-[K    70% |██████████████████████▌         | 1.5MB 56.5MB/s eta 0:00:01
-[K    70% |██████████████████████▊         | 1.5MB 56.4MB/s eta 0:00:01
-[K    71% |██████████████████████▉         | 1.6MB 55.2MB/s eta 0:00:01
-[K    71% |███████████████████████         | 1.6MB 56.9MB/s eta 0:00:01
-[K    72% |███████████████████████▏        | 1.6MB 55.3MB/s eta 0:00:01
-[K    72% |███████████████████████▎        | 1.6MB 55.2MB/s eta 0:00:01
-[K    73% |███████████████████████▌        | 1.6MB 55.3MB/s eta 0:00:01
-[K    73% |███████████████████████▋        | 1.6MB 54.1MB/s eta 0:00:01
-[K    74% |███████████████████████▊        | 1.6MB 55.1MB/s eta 0:00:01
-[K    74% |████████████████████████        | 1.6MB 55.9MB/s eta 0:00:01
-[K    75% |████████████████████████        | 1.6MB 55.1MB/s eta 0:00:01
-[K    75% |████████████████████████▏       | 1.6MB 55.7MB/s eta 0:00:01
-[K    76% |████████████████████████▍       | 1.7MB 56.9MB/s eta 0:00:01
-[K    76% |████████████████████████▌       | 1.7MB 55.3MB/s eta 0:00:01
-[K    77% |████████████████████████▋       | 1.7MB 56.7MB/s eta 0:00:01
-[K    77% |████████████████████████▉       | 1.7MB 56.8MB/s eta 0:00:01
-[K    77% |█████████████████████████       | 1.7MB 56.5MB/s eta 0:00:01
-[K    78% |█████████████████████████       | 1.7MB 56.0MB/s eta 0:00:01
-[K    78% |█████████████████████████▎      | 1.7MB 55.0MB/s eta 0:00:01
-[K    79% |█████████████████████████▍      | 1.7MB 54.1MB/s eta 0:00:01
-[K    79% |█████████████████████████▌      | 1.7MB 53.9MB/s eta 0:00:01
-[K    80% |█████████████████████████▊      | 1.8MB 52.4MB/s eta 0:00:01
-[K    80% |█████████████████████████▉      | 1.8MB 50.0MB/s eta 0:00:01
-[K    81% |██████████████████████████      | 1.8MB 50.7MB/s eta 0:00:01
-[K    81% |██████████████████████████▏     | 1.8MB 48.7MB/s eta 0:00:01
-[K    82% |██████████████████████████▎     | 1.8MB 47.2MB/s eta 0:00:01
-[K    82% |██████████████████████████▌     | 1.8MB 48.0MB/s eta 0:00:01
-[K    83% |██████████████████████████▋     | 1.8MB 47.5MB/s eta 0:00:01
-[K    83% |██████████████████████████▊     | 1.8MB 47.7MB/s eta 0:00:01
-[K    84% |███████████████████████████     | 1.8MB 47.4MB/s eta 0:00:01
-[K    84% |███████████████████████████     | 1.8MB 46.3MB/s eta 0:00:01
-[K    85% |███████████████████████████▏    | 1.9MB 47.8MB/s eta 0:00:01
-[K    85% |███████████████████████████▍    | 1.9MB 48.1MB/s eta 0:00:01
-[K    85% |███████████████████████████▌    | 1.9MB 46.8MB/s eta 0:00:01
-[K    86% |███████████████████████████▋    | 1.9MB 49.1MB/s eta 0:00:01
-[K    86% |███████████████████████████▉    | 1.9MB 48.8MB/s eta 0:00:01
-[K    87% |████████████████████████████    | 1.9MB 48.9MB/s eta 0:00:01
-[K    87% |████████████████████████████    | 1.9MB 49.5MB/s eta 0:00:01
-[K    88% |████████████████████████████▎   | 1.9MB 48.6MB/s eta 0:00:01
-[K    88% |████████████████████████████▍   | 1.9MB 49.9MB/s eta 0:00:01
-[K    89% |████████████████████████████▋   | 1.9MB 50.5MB/s eta 0:00:01
-[K    89% |████████████████████████████▊   | 2.0MB 49.2MB/s eta 0:00:01
-[K    90% |████████████████████████████▉   | 2.0MB 50.6MB/s eta 0:00:01
-[K    90% |████████████���████████████████   | 2.0MB 51.3MB/s eta 0:00:01
-[K    91% |█████████████████████████████▏  | 2.0MB 50.7MB/s eta 0:00:01
-[K    91% |█████████████████████████████▎  | 2.0MB 51.2MB/s eta 0:00:01
-[K    92% |█████████████████████████████▌  | 2.0MB 50.3MB/s eta 0:00:01
-[K    92% |█████████████████████████████▋  | 2.0MB 51.1MB/s eta 0:00:01
-[K    93% |█████████████████████████████▊  | 2.0MB 51.1MB/s eta 0:00:01
-[K    93% |██████████████████████████████  | 2.0MB 50.2MB/s eta 0:00:01
-[K    93% |██████████████████████████████  | 2.0MB 51.1MB/s eta 0:00:01
-[K    94% |██████████████████████████████▏ | 2.1MB 51.5MB/s eta 0:00:01
-[K    94% |██████████████████████████████▍ | 2.1MB 51.5MB/s eta 0:00:01
-[K    95% |██████████████████████████████▌ | 2.1MB 51.6MB/s eta 0:00:01
-[K    95% |██████████████████████████████▋ | 2.1MB 51.2MB/s eta 0:00:01
-[K    96% |█████████████████████████████���▉ | 2.1MB 52.2MB/s eta 0:00:01
-[K    96% |███████████████████████████████ | 2.1MB 52.1MB/s eta 0:00:01
-[K    97% |███████████████████████████████▏| 2.1MB 50.7MB/s eta 0:00:01
-[K    97% |███████████████████████████████▎| 2.1MB 51.6MB/s eta 0:00:01
-[K    98% |███████████████████████████████▍| 2.1MB 51.7MB/s eta 0:00:01
-[K    98% |███████████████████████████████▋| 2.2MB 51.8MB/s eta 0:00:01
-[K    99% |███████████████████████████████▊| 2.2MB 51.8MB/s eta 0:00:01
-[K    99% |███████████████████████████████▉| 2.2MB 51.1MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 2.2MB 630kB/s 
+[K    0% |â–                               | 10kB 58.5MB/s eta 0:00:01
+[K    0% |â–Ž                               | 20kB 50.8MB/s eta 0:00:01
+[K    1% |â–Œ                               | 30kB 52.7MB/s eta 0:00:01
+[K    1% |â–‹                               | 40kB 52.1MB/s eta 0:00:01
+[K    2% |â–Š                               | 51kB 51.7MB/s eta 0:00:01
+[K    2% |â–ˆ                               | 61kB 53.2MB/s eta 0:00:01
+[K    3% |â–ˆ                               | 71kB 53.1MB/s eta 0:00:01
+[K    3% |â–ˆâ–                              | 81kB 52.8MB/s eta 0:00:01
+[K    4% |â–ˆâ–                              | 92kB 53.9MB/s eta 0:00:01
+[K    4% |â–ˆâ–Œ                              | 102kB 53.9MB/s eta 0:00:01
+[K    5% |â–ˆâ–‹                              | 112kB 54.3MB/s eta 0:00:01
+[K    5% |â–ˆâ–‰                              | 122kB 55.3MB/s eta 0:00:01
+[K    6% |â–ˆâ–ˆ                              | 133kB 54.7MB/s eta 0:00:01
+[K    6% |â–ˆâ–ˆ                              | 143kB 56.2MB/s eta 0:00:01
+[K    7% |â–ˆâ–ˆâ–Ž                             | 153kB 56.6MB/s eta 0:00:01
+[K    7% |â–ˆâ–ˆâ–                             | 163kB 55.7MB/s eta 0:00:01
+[K    7% |â–ˆâ–ˆâ–Œ                             | 174kB 57.0MB/s eta 0:00:01
+[K    8% |â–ˆâ–ˆâ–Š                             | 184kB 57.3MB/s eta 0:00:01
+[K    8% |â–ˆâ–ˆâ–‰                             | 194kB 57.5MB/s eta 0:00:01
+[K    9% |â–ˆâ–ˆâ–ˆ                             | 204kB 56.6MB/s eta 0:00:01
+[K    9% |â–ˆâ–ˆâ–ˆâ–                            | 215kB 54.7MB/s eta 0:00:01
+[K    10% |â–ˆâ–ˆâ–ˆâ–Ž                            | 225kB 55.8MB/s eta 0:00:01
+[K    10% |â–ˆâ–ˆâ–ˆâ–Œ                            | 235kB 55.5MB/s eta 0:00:01
+[K    11% |â–ˆâ–ˆâ–ˆâ–‹                            | 245kB 54.0MB/s eta 0:00:01
+[K    11% |â–ˆâ–ˆâ–ˆâ–Š                            | 256kB 53.1MB/s eta 0:00:01
+[K    12% |â–ˆâ–ˆâ–ˆâ–ˆ                            | 266kB 49.6MB/s eta 0:00:01
+[K    12% |â–ˆâ–ˆâ–ˆâ–ˆ                            | 276kB 49.1MB/s eta 0:00:01
+[K    13% |â–ˆâ–ˆâ–ˆâ–ˆâ–                           | 286kB 48.3MB/s eta 0:00:01
+[K    13% |â–ˆâ–ˆâ–ˆâ–ˆâ–                           | 296kB 47.4MB/s eta 0:00:01
+[K    14% |â–ˆâ–ˆâ–ˆâ–ˆâ–Œ                           | 307kB 48.1MB/s eta 0:00:01
+[K    14% |â–ˆâ–ˆâ–ˆâ–ˆâ–‹                           | 317kB 48.7MB/s eta 0:00:01
+[K    15% |â–ˆâ–ˆâ–ˆâ–ˆâ–‰                           | 327kB 47.9MB/s eta 0:00:01
+[K    15% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                           | 337kB 49.1MB/s eta 0:00:01
+[K    15% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                           | 348kB 48.9MB/s eta 0:00:01
+[K    16% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                          | 358kB 50.5MB/s eta 0:00:01
+[K    16% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                          | 368kB 54.2MB/s eta 0:00:01
+[K    17% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                          | 378kB 53.8MB/s eta 0:00:01
+[K    17% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                          | 389kB 55.8MB/s eta 0:00:01
+[K    18% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                          | 399kB 54.7MB/s eta 0:00:01
+[K    18% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                          | 409kB 54.1MB/s eta 0:00:01
+[K    19% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                         | 419kB 54.4MB/s eta 0:00:01
+[K    19% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                         | 430kB 53.8MB/s eta 0:00:01
+[K    20% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                         | 440kB 53.8MB/s eta 0:00:01
+[K    20% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                         | 450kB 53.8MB/s eta 0:00:01
+[K    21% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                         | 460kB 52.0MB/s eta 0:00:01
+[K    21% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                         | 471kB 53.0MB/s eta 0:00:01
+[K    22% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                         | 481kB 52.5MB/s eta 0:00:01
+[K    22% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                        | 491kB 50.9MB/s eta 0:00:01
+[K    23% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                        | 501kB 52.9MB/s eta 0:00:01
+[K    23% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                        | 512kB 52.8MB/s eta 0:00:01
+[K    23% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                        | 522kB 53.6MB/s eta 0:00:01
+[K    24% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                        | 532kB 53.6MB/s eta 0:00:01
+[K    24% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                        | 542kB 52.1MB/s eta 0:00:01
+[K    25% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                       | 552kB 53.6MB/s eta 0:00:01
+[K    25% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                       | 563kB 53.9MB/s eta 0:00:01
+[K    26% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                       | 573kB 52.9MB/s eta 0:00:01
+[K    26% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                       | 583kB 54.5MB/s eta 0:00:01
+[K    27% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                       | 593kB 54.6MB/s eta 0:00:01
+[K    27% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                       | 604kB 54.6MB/s eta 0:00:01
+[K    28% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                       | 614kB 54.6MB/s eta 0:00:01
+[K    28% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                      | 624kB 52.8MB/s eta 0:00:01
+[K    29% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                      | 634kB 53.8MB/s eta 0:00:01
+[K    29% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                      | 645kB 54.4MB/s eta 0:00:01
+[K    30% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                      | 655kB 53.4MB/s eta 0:00:01
+[K    30% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                      | 665kB 55.0MB/s eta 0:00:01
+[K    31% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                      | 675kB 54.5MB/s eta 0:00:01
+[K    31% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                      | 686kB 54.4MB/s eta 0:00:01
+[K    31% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                     | 696kB 54.4MB/s eta 0:00:01
+[K    32% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                     | 706kB 52.8MB/s eta 0:00:01
+[K    32% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                     | 716kB 54.4MB/s eta 0:00:01
+[K    33% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                     | 727kB 54.0MB/s eta 0:00:01
+[K    33% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                     | 737kB 51.1MB/s eta 0:00:01
+[K    34% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                     | 747kB 51.2MB/s eta 0:00:01
+[K    34% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                    | 757kB 49.8MB/s eta 0:00:01
+[K    35% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                    | 768kB 49.7MB/s eta 0:00:01
+[K    35% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                    | 778kB 49.5MB/s eta 0:00:01
+[K    36% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                    | 788kB 48.7MB/s eta 0:00:01
+[K    36% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                    | 798kB 50.0MB/s eta 0:00:01
+[K    37% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                    | 808kB 50.5MB/s eta 0:00:01
+[K    37% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                    | 819kB 49.7MB/s eta 0:00:01
+[K    38% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                   | 829kB 51.7MB/s eta 0:00:01
+[K    38% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                   | 839kB 53.1MB/s eta 0:00:01
+[K    38% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                   | 849kB 54.1MB/s eta 0:00:01
+[K    39% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                   | 860kB 55.2MB/s eta 0:00:01
+[K    39% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                   | 870kB 53.6MB/s eta 0:00:01
+[K    40% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                   | 880kB 55.3MB/s eta 0:00:01
+[K    40% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                   | 890kB 55.5MB/s eta 0:00:01
+[K    41% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                  | 901kB 54.5MB/s eta 0:00:01
+[K    41% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                  | 911kB 55.6MB/s eta 0:00:01
+[K    42% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                  | 921kB 55.0MB/s eta 0:00:01
+[K    42% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                  | 931kB 54.9MB/s eta 0:00:01
+[K    43% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                  | 942kB 56.1MB/s eta 0:00:01
+[K    43% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                  | 952kB 55.0MB/s eta 0:00:01
+[K    44% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆï¿½ï¿½ï¿½â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                 | 962kB 56.8MB/s eta 0:00:01
+[K    44% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                 | 972kB 43.5MB/s eta 0:00:01
+[K    45% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                 | 983kB 42.4MB/s eta 0:00:01
+[K    45% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                 | 993kB 43.0MB/s eta 0:00:01
+[K    46% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                 | 1.0MB 42.5MB/s eta 0:00:01
+[K    46% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                 | 1.0MB 42.5MB/s eta 0:00:01
+[K    46% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                 | 1.0MB 42.5MB/s eta 0:00:01
+[K    47% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                | 1.0MB 41.5MB/s eta 0:00:01
+[K    47% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                | 1.0MB 42.1MB/s eta 0:00:01
+[K    48% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                | 1.1MB 41.8MB/s eta 0:00:01
+[K    48% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                | 1.1MB 41.0MB/s eta 0:00:01
+[K    49% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                | 1.1MB 54.5MB/s eta 0:00:01
+[K    49% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                | 1.1MB 55.0MB/s eta 0:00:01
+[K    50% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                | 1.1MB 54.3MB/s eta 0:00:01
+[K    50% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž               | 1.1MB 54.3MB/s eta 0:00:01
+[K    51% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–               | 1.1MB 52.8MB/s eta 0:00:01
+[K    51% |â–ˆâ–ˆï¿½ï¿½ï¿½â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ               | 1.1MB 54.4MB/s eta 0:00:01
+[K    52% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š               | 1.1MB 53.7MB/s eta 0:00:01
+[K    52% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰               | 1.1MB 52.6MB/s eta 0:00:01
+[K    53% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ               | 1.2MB 54.0MB/s eta 0:00:01
+[K    53% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–              | 1.2MB 52.5MB/s eta 0:00:01
+[K    54% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž              | 1.2MB 52.3MB/s eta 0:00:01
+[K    54% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–              | 1.2MB 52.1MB/s eta 0:00:01
+[K    54% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹              | 1.2MB 50.9MB/s eta 0:00:01
+[K    55% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š              | 1.2MB 51.7MB/s eta 0:00:01
+[K    55% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰              | 1.2MB 51.2MB/s eta 0:00:01
+[K    56% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ              | 1.2MB 50.2MB/s eta 0:00:01
+[K    56% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–             | 1.2MB 51.5MB/s eta 0:00:01
+[K    57% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–             | 1.2MB 51.7MB/s eta 0:00:01
+[K    57% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ             | 1.3MB 51.9MB/s eta 0:00:01
+[K    58% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹             | 1.3MB 53.4MB/s eta 0:00:01
+[K    58% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆï¿½ï¿½ï¿½â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰             | 1.3MB 52.0MB/s eta 0:00:01
+[K    59% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ             | 1.3MB 53.1MB/s eta 0:00:01
+[K    59% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ             | 1.3MB 53.7MB/s eta 0:00:01
+[K    60% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž            | 1.3MB 53.3MB/s eta 0:00:01
+[K    60% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–            | 1.3MB 55.6MB/s eta 0:00:01
+[K    61% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ            | 1.3MB 55.2MB/s eta 0:00:01
+[K    61% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š            | 1.3MB 55.8MB/s eta 0:00:01
+[K    62% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰            | 1.4MB 55.2MB/s eta 0:00:01
+[K    62% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ            | 1.4MB 54.1MB/s eta 0:00:01
+[K    62% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–           | 1.4MB 55.1MB/s eta 0:00:01
+[K    63% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž           | 1.4MB 55.8MB/s eta 0:00:01
+[K    63% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–           | 1.4MB 54.8MB/s eta 0:00:01
+[K    64% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹           | 1.4MB 56.4MB/s eta 0:00:01
+[K    64% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š           | 1.4MB 55.4MB/s eta 0:00:01
+[K    65% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ           | 1.4MB 55.4MB/s eta 0:00:01
+[K    65% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ           | 1.4MB 55.3MB/s eta 0:00:01
+[K    66% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–          | 1.4MB 54.4MB/s eta 0:00:01
+[K    66% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–          | 1.5MB 56.2MB/s eta 0:00:01
+[K    67% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ          | 1.5MB 55.1MB/s eta 0:00:01
+[K    67% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹          | 1.5MB 53.8MB/s eta 0:00:01
+[K    68% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰          | 1.5MB 54.9MB/s eta 0:00:01
+[K    68% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ          | 1.5MB 54.2MB/s eta 0:00:01
+[K    69% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ          | 1.5MB 54.3MB/s eta 0:00:01
+[K    69% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž         | 1.5MB 54.8MB/s eta 0:00:01
+[K    69% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–         | 1.5MB 53.6MB/s eta 0:00:01
+[K    70% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ         | 1.5MB 54.8MB/s eta 0:00:01
+[K    70% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š         | 1.5MB 52.1MB/s eta 0:00:01
+[K    71% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰         | 1.6MB 48.4MB/s eta 0:00:01
+[K    71% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ         | 1.6MB 49.4MB/s eta 0:00:01
+[K    72% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–        | 1.6MB 47.9MB/s eta 0:00:01
+[K    72% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž        | 1.6MB 47.6MB/s eta 0:00:01
+[K    73% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ        | 1.6MB 47.1MB/s eta 0:00:01
+[K    73% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹        | 1.6MB 46.2MB/s eta 0:00:01
+[K    74% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š        | 1.6MB 47.4MB/s eta 0:00:01
+[K    74% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ        | 1.6MB 47.4MB/s eta 0:00:01
+[K    75% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ        | 1.6MB 46.4MB/s eta 0:00:01
+[K    75% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–       | 1.6MB 49.4MB/s eta 0:00:01
+[K    76% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–       | 1.7MB 51.6MB/s eta 0:00:01
+[K    76% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ       | 1.7MB 52.5MB/s eta 0:00:01
+[K    77% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹       | 1.7MB 54.6MB/s eta 0:00:01
+[K    77% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰       | 1.7MB 53.2MB/s eta 0:00:01
+[K    77% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ       | 1.7MB 55.6MB/s eta 0:00:01
+[K    78% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ       | 1.7MB 55.1MB/s eta 0:00:01
+[K    78% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž      | 1.7MB 53.4MB/s eta 0:00:01
+[K    79% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–      | 1.7MB 54.4MB/s eta 0:00:01
+[K    79% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ      | 1.7MB 55.2MB/s eta 0:00:01
+[K    80% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š      | 1.8MB 55.2MB/s eta 0:00:01
+[K    80% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰      | 1.8MB 55.4MB/s eta 0:00:01
+[K    81% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ      | 1.8MB 54.3MB/s eta 0:00:01
+[K    81% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–     | 1.8MB 55.4MB/s eta 0:00:01
+[K    82% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž     | 1.8MB 55.9MB/s eta 0:00:01
+[K    82% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ     | 1.8MB 54.1MB/s eta 0:00:01
+[K    83% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹     | 1.8MB 55.9MB/s eta 0:00:01
+[K    83% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š     | 1.8MB 56.1MB/s eta 0:00:01
+[K    84% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ     | 1.8MB 56.0MB/s eta 0:00:01
+[K    84% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ     | 1.8MB 56.0MB/s eta 0:00:01
+[K    85% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–    | 1.9MB 54.2MB/s eta 0:00:01
+[K    85% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–    | 1.9MB 55.7MB/s eta 0:00:01
+[K    85% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ    | 1.9MB 55.2MB/s eta 0:00:01
+[K    86% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹    | 1.9MB 53.4MB/s eta 0:00:01
+[K    86% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰    | 1.9MB 54.5MB/s eta 0:00:01
+[K    87% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ    | 1.9MB 55.1MB/s eta 0:00:01
+[K    87% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ    | 1.9MB 55.1MB/s eta 0:00:01
+[K    88% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž   | 1.9MB 55.7MB/s eta 0:00:01
+[K    88% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–   | 1.9MB 54.5MB/s eta 0:00:01
+[K    89% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹   | 1.9MB 55.6MB/s eta 0:00:01
+[K    89% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š   | 2.0MB 56.4MB/s eta 0:00:01
+[K    90% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰   | 2.0MB 55.4MB/s eta 0:00:01
+[K    90% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆï¿½ï¿½ï¿½â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   | 2.0MB 57.0MB/s eta 0:00:01
+[K    91% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–  | 2.0MB 56.5MB/s eta 0:00:01
+[K    91% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž  | 2.0MB 54.6MB/s eta 0:00:01
+[K    92% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ  | 2.0MB 54.4MB/s eta 0:00:01
+[K    92% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹  | 2.0MB 53.1MB/s eta 0:00:01
+[K    93% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š  | 2.0MB 53.3MB/s eta 0:00:01
+[K    93% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  | 2.0MB 53.2MB/s eta 0:00:01
+[K    93% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  | 2.0MB 51.3MB/s eta 0:00:01
+[K    94% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ– | 2.1MB 51.3MB/s eta 0:00:01
+[K    94% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ– | 2.1MB 51.3MB/s eta 0:00:01
+[K    95% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ | 2.1MB 51.3MB/s eta 0:00:01
+[K    95% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹ | 2.1MB 52.3MB/s eta 0:00:01
+[K    96% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆï¿½ï¿½ï¿½â–‰ | 2.1MB 52.4MB/s eta 0:00:01
+[K    96% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ | 2.1MB 53.5MB/s eta 0:00:01
+[K    97% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–| 2.1MB 53.6MB/s eta 0:00:01
+[K    97% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž| 2.1MB 53.4MB/s eta 0:00:01
+[K    98% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–| 2.1MB 54.6MB/s eta 0:00:01
+[K    98% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹| 2.2MB 55.6MB/s eta 0:00:01
+[K    99% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š| 2.2MB 56.7MB/s eta 0:00:01
+[K    99% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰| 2.2MB 56.8MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 2.2MB 669kB/s 
 [?25hCollecting ipaddress; python_version <= "2.7" and extra == "secure" (from urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
   Downloading ipaddress-1.0.19.tar.gz
 Requirement already satisfied: six>=1.5.2 in /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages (from pyOpenSSL>=0.14; python_version <= "2.7" and extra == "secure"->urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
 Collecting asn1crypto>=0.21.0 (from cryptography>=1.3.4; python_version <= "2.7" and extra == "secure"->urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
   Downloading asn1crypto-0.24.0-py2.py3-none-any.whl (101kB)
 [?25l
-[K    10% |███▎                            | 10kB 42.3MB/s eta 0:00:01
-[K    20% |██████▌                         | 20kB 36.4MB/s eta 0:00:01
-[K    30% |█████████▊                      | 30kB 35.2MB/s eta 0:00:01
-[K    40% |█████████████                   | 40kB 36.2MB/s eta 0:00:01
-[K    50% |████████████████▏               | 51kB 37.0MB/s eta 0:00:01
-[K    60% |███████████████████▍            | 61kB 38.8MB/s eta 0:00:01
-[K    70% |██████████████████████▋         | 71kB 39.4MB/s eta 0:00:01
-[K    80% |█████████████████████████▉      | 81kB 41.3MB/s eta 0:00:01
-[K    90% |█████████████████████████████   | 92kB 42.4MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 102kB 10.4MB/s 
+[K    10% |â–ˆâ–ˆâ–ˆâ–Ž                            | 10kB 58.2MB/s eta 0:00:01
+[K    20% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                         | 20kB 46.0MB/s eta 0:00:01
+[K    30% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                      | 30kB 50.3MB/s eta 0:00:01
+[K    40% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                   | 40kB 50.5MB/s eta 0:00:01
+[K    50% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–               | 51kB 50.6MB/s eta 0:00:01
+[K    60% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–            | 61kB 52.4MB/s eta 0:00:01
+[K    70% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹         | 71kB 40.9MB/s eta 0:00:01
+[K    80% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰      | 81kB 41.7MB/s eta 0:00:01
+[K    90% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   | 92kB 43.4MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 102kB 10.8MB/s 
 [?25hCollecting cffi>=1.7; platform_python_implementation != "PyPy" (from cryptography>=1.3.4; python_version <= "2.7" and extra == "secure"->urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
   Downloading cffi-1.11.5-cp27-cp27mu-manylinux1_x86_64.whl (407kB)
 [?25l
-[K    2% |▉                               | 10kB 59.6MB/s eta 0:00:01
-[K    5% |█▋                              | 20kB 46.7MB/s eta 0:00:01
-[K    7% |██▍                             | 30kB 50.6MB/s eta 0:00:01
-[K    10% |███▏                            | 40kB 48.4MB/s eta 0:00:01
-[K    12% |████                            | 51kB 48.3MB/s eta 0:00:01
-[K    15% |████▉                           | 61kB 50.0MB/s eta 0:00:01
-[K    17% |█████▋                          | 71kB 49.6MB/s eta 0:00:01
-[K    20% |██████▍                         | 81kB 49.5MB/s eta 0:00:01
-[K    22% |███████▎                        | 92kB 51.1MB/s eta 0:00:01
-[K    25% |████████                        | 102kB 50.9MB/s eta 0:00:01
-[K    27% |████████▉                       | 112kB 51.4MB/s eta 0:00:01
-[K    30% |█████████▋                      | 122kB 52.6MB/s eta 0:00:01
-[K    32% |██████████▌                     | 133kB 52.0MB/s eta 0:00:01
-[K    35% |███████████▎                    | 143kB 54.5MB/s eta 0:00:01
-[K    37% |████████████                    | 153kB 55.4MB/s eta 0:00:01
-[K    40% |████████████▉                   | 163kB 54.9MB/s eta 0:00:01
-[K    42% |█████████████▊                  | 174kB 57.0MB/s eta 0:00:01
-[K    45% |██████████████▌                 | 184kB 57.6MB/s eta 0:00:01
-[K    47% |███████████████▎                | 194kB 57.7MB/s eta 0:00:01
-[K    50% |████████████████                | 204kB 58.4MB/s eta 0:00:01
-[K    52% |█████████████████               | 215kB 56.6MB/s eta 0:00:01
-[K    55% |█████████████████▊              | 225kB 58.8MB/s eta 0:00:01
-[K    57% |██████████████████▌             | 235kB 58.9MB/s eta 0:00:01
-[K    60% |███████████████████▎            | 245kB 57.8MB/s eta 0:00:01
-[K    62% |████████████████████            | 256kB 59.0MB/s eta 0:00:01
-[K    65% |█████████████████████           | 266kB 58.9MB/s eta 0:00:01
-[K    67% |█████████████████████▊          | 276kB 58.9MB/s eta 0:00:01
-[K    70% |██████████████████████▌         | 286kB 58.9MB/s eta 0:00:01
-[K    72% |███████████████████████▎        | 296kB 57.6MB/s eta 0:00:01
-[K    75% |████████████████████████▏       | 307kB 58.9MB/s eta 0:00:01
-[K    77% |█████████████████████████       | 317kB 59.8MB/s eta 0:00:01
-[K    80% |█████████████████████████▊      | 327kB 58.6MB/s eta 0:00:01
-[K    82% |██████████████████████████▌     | 337kB 59.9MB/s eta 0:00:01
-[K    85% |███████████████████████████▍    | 348kB 59.8MB/s eta 0:00:01
-[K    87% |█████████████████���██████████▏   | 358kB 58.5MB/s eta 0:00:01
-[K    90% |█████████████████████████████   | 368kB 58.6MB/s eta 0:00:01
-[K    93% |█████████████████████████████▊  | 378kB 57.3MB/s eta 0:00:01
-[K    95% |██████████████████████████████▋ | 389kB 58.5MB/s eta 0:00:01
-[K    98% |███████████████████████████████▍| 399kB 58.4MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 409kB 3.6MB/s 
+[K    2% |â–‰                               | 10kB 56.5MB/s eta 0:00:01
+[K    5% |â–ˆâ–‹                              | 20kB 49.2MB/s eta 0:00:01
+[K    7% |â–ˆâ–ˆâ–                             | 30kB 53.4MB/s eta 0:00:01
+[K    10% |â–ˆâ–ˆâ–ˆâ–                            | 40kB 52.8MB/s eta 0:00:01
+[K    12% |â–ˆâ–ˆâ–ˆâ–ˆ                            | 51kB 52.8MB/s eta 0:00:01
+[K    15% |â–ˆâ–ˆâ–ˆâ–ˆâ–‰                           | 61kB 54.1MB/s eta 0:00:01
+[K    17% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                          | 71kB 53.7MB/s eta 0:00:01
+[K    20% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–                         | 81kB 53.2MB/s eta 0:00:01
+[K    22% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                        | 92kB 54.6MB/s eta 0:00:01
+[K    25% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                        | 102kB 44.1MB/s eta 0:00:01
+[K    27% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                       | 112kB 44.6MB/s eta 0:00:01
+[K    30% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                      | 122kB 45.6MB/s eta 0:00:01
+[K    32% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                     | 133kB 39.8MB/s eta 0:00:01
+[K    35% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                    | 143kB 40.4MB/s eta 0:00:01
+[K    37% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                    | 153kB 40.5MB/s eta 0:00:01
+[K    40% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‰                   | 163kB 40.1MB/s eta 0:00:01
+[K    42% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š                  | 174kB 40.9MB/s eta 0:00:01
+[K    45% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ                 | 184kB 41.3MB/s eta 0:00:01
+[K    47% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                | 194kB 41.3MB/s eta 0:00:01
+[K    50% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                | 204kB 45.0MB/s eta 0:00:01
+[K    52% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ               | 215kB 44.1MB/s eta 0:00:01
+[K    55% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š              | 225kB 43.3MB/s eta 0:00:01
+[K    57% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ             | 235kB 48.0MB/s eta 0:00:01
+[K    60% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž            | 245kB 41.3MB/s eta 0:00:01
+[K    62% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ            | 256kB 41.7MB/s eta 0:00:01
+[K    65% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ           | 266kB 40.9MB/s eta 0:00:01
+[K    67% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š          | 276kB 40.5MB/s eta 0:00:01
+[K    70% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ         | 286kB 39.8MB/s eta 0:00:01
+[K    72% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž        | 296kB 39.2MB/s eta 0:00:01
+[K    75% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–       | 307kB 43.9MB/s eta 0:00:01
+[K    77% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ       | 317kB 44.1MB/s eta 0:00:01
+[K    80% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š      | 327kB 44.5MB/s eta 0:00:01
+[K    82% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆï¿½ï¿½ï¿½â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ     | 337kB 46.6MB/s eta 0:00:01
+[K    85% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–    | 348kB 54.0MB/s eta 0:00:01
+[K    87% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–   | 358kB 54.3MB/s eta 0:00:01
+[K    90% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   | 368kB 55.8MB/s eta 0:00:01
+[K    93% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Š  | 378kB 55.5MB/s eta 0:00:01
+[K    95% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹ | 389kB 57.9MB/s eta 0:00:01
+[K    98% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–| 399kB 58.1MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 409kB 3.6MB/s 
 [?25hCollecting enum34; python_version < "3" (from cryptography>=1.3.4; python_version <= "2.7" and extra == "secure"->urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
   Downloading enum34-1.1.6-py2-none-any.whl
 Collecting pycparser (from cffi>=1.7; platform_python_implementation != "PyPy"->cryptography>=1.3.4; python_version <= "2.7" and extra == "secure"->urllib3[secure]; python_version < "3"->coveralls->-r requirements.txt (line 1))
   Downloading pycparser-2.18.tar.gz (245kB)
 [?25l
-[K    4% |█▎                              | 10kB 66.0MB/s eta 0:00:01
-[K    8% |██▋                             | 20kB 42.3MB/s eta 0:00:01
-[K    12% |████                            | 30kB 44.4MB/s eta 0:00:01
-[K    16% |█████▎                          | 40kB 43.7MB/s eta 0:00:01
-[K    20% |██████▋                         | 51kB 44.9MB/s eta 0:00:01
-[K    24% |████████                        | 61kB 46.0MB/s eta 0:00:01
-[K    29% |█████████▎                      | 71kB 45.3MB/s eta 0:00:01
-[K    33% |██████████▋                     | 81kB 44.3MB/s eta 0:00:01
-[K    37% |████████████                    | 92kB 45.1MB/s eta 0:00:01
-[K    41% |█████████████▎                  | 102kB 45.0MB/s eta 0:00:01
-[K    45% |██████████████▋                 | 112kB 45.0MB/s eta 0:00:01
-[K    49% |████████████████                | 122kB 47.6MB/s eta 0:00:01
-[K    54% |█████████████████▎              | 133kB 47.4MB/s eta 0:00:01
-[K    58% |██████████████████▋             | 143kB 49.2MB/s eta 0:00:01
-[K    62% |████████████████████            | 153kB 49.0MB/s eta 0:00:01
-[K    66% |█████████████████████▎          | 163kB 48.1MB/s eta 0:00:01
-[K    70% |██████████████████████▋         | 174kB 49.5MB/s eta 0:00:01
-[K    74% |████████████████████████        | 184kB 49.7MB/s eta 0:00:01
-[K    79% |█████████████████████████▎      | 194kB 49.7MB/s eta 0:00:01
-[K    83% |██████████████████████████▋     | 204kB 49.1MB/s eta 0:00:01
-[K    87% |████████████████████████████    | 215kB 48.3MB/s eta 0:00:01
-[K    91% |█████████████████████████████▎  | 225kB 49.2MB/s eta 0:00:01
-[K    95% |██████████████████████████████▋ | 235kB 49.2MB/s eta 0:00:01
-[K    99% |████████████████████████████████| 245kB 48.6MB/s eta 0:00:01
-[K    100% |████████████████████████████████| 256kB 5.9MB/s 
+[K    4% |â–ˆâ–Ž                              | 10kB 67.0MB/s eta 0:00:01
+[K    8% |â–ˆâ–ˆâ–‹                             | 20kB 51.1MB/s eta 0:00:01
+[K    12% |â–ˆâ–ˆâ–ˆâ–ˆ                            | 30kB 54.7MB/s eta 0:00:01
+[K    16% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                          | 40kB 53.6MB/s eta 0:00:01
+[K    20% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                         | 51kB 53.3MB/s eta 0:00:01
+[K    24% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                        | 61kB 53.0MB/s eta 0:00:01
+[K    29% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                      | 71kB 52.9MB/s eta 0:00:01
+[K    33% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                     | 81kB 52.6MB/s eta 0:00:01
+[K    37% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                    | 92kB 54.0MB/s eta 0:00:01
+[K    41% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž                  | 102kB 53.5MB/s eta 0:00:01
+[K    45% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹                 | 112kB 53.5MB/s eta 0:00:01
+[K    49% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ                | 122kB 54.7MB/s eta 0:00:01
+[K    54% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž              | 133kB 53.9MB/s eta 0:00:01
+[K    58% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹             | 143kB 55.5MB/s eta 0:00:01
+[K    62% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ            | 153kB 55.8MB/s eta 0:00:01
+[K    66% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž          | 163kB 55.4MB/s eta 0:00:01
+[K    70% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹         | 174kB 56.8MB/s eta 0:00:01
+[K    74% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ        | 184kB 57.3MB/s eta 0:00:01
+[K    79% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž      | 194kB 57.5MB/s eta 0:00:01
+[K    83% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹     | 204kB 58.1MB/s eta 0:00:01
+[K    87% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ    | 215kB 57.0MB/s eta 0:00:01
+[K    91% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Ž  | 225kB 58.9MB/s eta 0:00:01
+[K    95% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹ | 235kB 58.9MB/s eta 0:00:01
+[K    99% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 245kB 58.3MB/s eta 0:00:01
+[K    100% |â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 256kB 6.0MB/s 
 [?25hBuilding wheels for collected packages: docopt, ipaddress, pycparser
   Running setup.py bdist_wheel for docopt ... [?25l- done
 [?25h  Stored in directory: /home/travis/.cache/pip/wheels/b2/16/5f/c33a2bb5f2dce71205f8e65cbfd05647d79d441282be31fd82
@@ -927,32 +957,15 @@ Successfully built docopt ipaddress pycparser
 Installing collected packages: docopt, certifi, chardet, idna, asn1crypto, pycparser, cffi, enum34, ipaddress, cryptography, pyOpenSSL, urllib3, requests, coverage, coveralls
 Successfully installed asn1crypto-0.24.0 certifi-2018.1.18 cffi-1.11.5 chardet-3.0.4 coverage-4.5.1 coveralls-1.3.0 cryptography-2.1.4 docopt-0.6.2 enum34-1.1.6 idna-2.6 ipaddress-1.0.19 pyOpenSSL-17.5.0 pycparser-2.18 requests-2.18.4 urllib3-1.22
 
-travis_time:end:0146a831:start=1520363931123517229,finish=1520363937663499473,duration=6539982244
+travis_time:end:2b394598:start=1520366201456844743,finish=1520366208146589284,duration=6689744541
 [0Ktravis_fold:end:install
-[0Ktravis_time:start:02fd3b44
+[0Ktravis_time:start:12f20fc2
 [0K$ coverage run CPS847MidtermTest.py
+Coverage.py warning: No data was collected. (no-data-collected)
+Couldn't run 'CPS847MidtermTest.py' as Python code: IndentationError: unexpected indent (CPS847MidtermTest.py, line 11)
 
-----------------------------------------------------------------------
-Ran 0 tests in 0.000s
-
-OK
-
-travis_time:end:02fd3b44:start=1520363937668670437,finish=1520363938038971129,duration=370300692
+travis_time:end:12f20fc2:start=1520366208151811903,finish=1520366208245175549,duration=93363646
 [0K
-[32;1mThe command "coverage run CPS847MidtermTest.py" exited with 0.[0m
-travis_fold:start:after_success
-[0Ktravis_time:start:1458df4a
-[0K$ coveralls
-Submitting coverage to coveralls.io...
-Coverage submitted!
-Couldn't find a repository matching this job.
-'url'
-Traceback (most recent call last):
-  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/coveralls/cli.py", line 75, in main
-    log.info(result['url'])
-KeyError: 'url'
+[31;1mThe command "coverage run CPS847MidtermTest.py" exited with 1.[0m
 
-travis_time:end:1458df4a:start=1520363938044258719,finish=1520363938624444692,duration=580185973
-[0Ktravis_fold:end:after_success
-[0K
-Done. Your build exited with 0.
+Done. Your build exited with 1.
